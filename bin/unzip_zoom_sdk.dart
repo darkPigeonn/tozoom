@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:convert';
 
 void main(List<String> args) async {
+  print('disini');
   var location = Platform.script.toString();
   var isNewFlutter = location.contains(".snapshot");
   if (isNewFlutter) {
@@ -22,6 +23,7 @@ void main(List<String> args) async {
         break;
       }
     }
+    print(zoomFileUri);
     if (zoomFileUri == null) {
       print("flutter_zoom_sdk package not found!");
       return;
@@ -43,7 +45,8 @@ void main(List<String> args) async {
 }
 
 Future<void> checkAndDownloadSDK(String location) async {
-  var androidCommonLibFile = location + '/android/libs/commonlib.aar';
+  var androidCommonLibFile = location + 'android/libs/commonlib.aar';
+  print(androidCommonLibFile);
   bool exists = await File(androidCommonLibFile).exists();
   if (!exists) {
     await downloadFile(
@@ -51,7 +54,7 @@ Future<void> checkAndDownloadSDK(String location) async {
             'https://www.dropbox.com/s/h9vx58hd6hdbzvx/commonlib.aar?dl=1'),
         androidCommonLibFile);
   }
-  var androidRTCLibFile = location + '/android/libs/mobilertc.aar';
+  var androidRTCLibFile = location + 'android/libs/mobilertc.aar';
   exists = await File(androidRTCLibFile).exists();
   if (!exists) {
     await downloadFile(
