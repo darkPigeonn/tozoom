@@ -1,0 +1,2 @@
+rootProject.name = 'tozoom'
+include ':tozoom'

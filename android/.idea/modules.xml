@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tozoom.iml" filepath="$PROJECT_DIR$/.idea/modules/tozoom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tozoom.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/tozoom.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tozoom.main.iml" filepath="$PROJECT_DIR$/.idea/modules/tozoom.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tozoom/tozoom.tozoom.iml" filepath="$PROJECT_DIR$/.idea/modules/tozoom/tozoom.tozoom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tozoom.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/tozoom.unitTest.iml" />
+    </modules>
+  </component>
+</project>
